@@ -22,9 +22,8 @@ window.onload = (event) => {
         window.location.href = './deleteProduct.html';
     });
 };
-
+const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 async function loadProducts() {
-    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
     try {
         const response = await fetch(`${apiUrl}/product/list`, {
             method: 'GET',

@@ -26,14 +26,13 @@ window.onload = async (event) => {
 
 
 };
-
+const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 function getQueryParams(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 };
 
 async function loadProduct(id) {
-    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
     try {
         const response = await fetch(`${apiUrl}/products/list/${id}`, {
             method: 'GET',
@@ -50,7 +49,6 @@ async function loadProduct(id) {
 
 async function actulizarProductos(id, nameHelado, descripcionHelado, precioHelado, tamañoHelado, disponibilidadHelado, imagenHelado){
     try {
-        const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
         const response = await fetch(`${apiUrl}/products/list/updateProducts/${id}`, {
             method: 'PUT',
             headers: {

@@ -19,8 +19,8 @@ window.onload = (event) => {
     });
 };
 
+const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 async function loadProducts() {
-    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
     try {
         const response = await fetch(`${apiUrl}/product/list`, {
             method: 'GET',
@@ -89,7 +89,6 @@ async function loadProducts() {
 }
 
 async function deleteCategory(id) {
-    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
     try {
         const response = await fetch(`${apiUrl}/products/list/deleteProducts/${id}`, {
             method: 'DELETE',

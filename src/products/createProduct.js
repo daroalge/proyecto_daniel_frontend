@@ -1,4 +1,5 @@
 window.onload = (event) => {
+    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
     const productsForm = document.getElementById('createProductsForm');
 
     productsForm.addEventListener('submit', async function (event) {
@@ -10,7 +11,6 @@ window.onload = (event) => {
         const sizeProduct = document.getElementById('size').value;
         const availabilityProduct = document.getElementById('availability').value;
         const imageProduct = document.getElementById('image').value;
-        const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 
         try {
             const response = await fetch (`${apiUrl}/products/list/createProducts`, {
