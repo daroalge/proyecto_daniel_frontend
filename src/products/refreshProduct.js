@@ -34,7 +34,7 @@ function getQueryParams(param) {
 
 async function loadProduct(id) {
     try {
-        const response = await fetch(`http://localhost:3000/products/list/${id}`, {
+        const response = await fetch(`https://proyecto-daniel-backend.vercel.app/products/list/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ async function loadProduct(id) {
 
 async function actulizarProductos(id, nameHelado, descripcionHelado, precioHelado, tamañoHelado, disponibilidadHelado, imagenHelado){
     try {
-        const response = await fetch(`http://localhost:3000/products/list/updateProducts/${id}`, {
+        const response = await fetch(`https://proyecto-daniel-backend.vercel.app/products/list/updateProducts/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

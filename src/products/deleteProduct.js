@@ -21,7 +21,7 @@ window.onload = (event) => {
 
 async function loadProducts() {
     try {
-        const response = await fetch('http://localhost:3000/product/list', {
+        const response = await fetch('https://proyecto-daniel-backend.vercel.app/product/list', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -89,7 +89,7 @@ async function loadProducts() {
 
 async function deleteCategory(id) {
     try {
-        const response = await fetch(`http://localhost:3000/products/list/deleteProducts/${id}`, {
+        const response = await fetch(`https://proyecto-daniel-backend.vercel.app/products/list/deleteProducts/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

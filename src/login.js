@@ -12,7 +12,7 @@ window.onload = (event) => {
         const password = document.getElementById('password__login').value;
 
         try {
-            const response = await fetch ('http://localhost:3000/api/login', {
+            const response = await fetch ('https://proyecto-daniel-backend.vercel.app/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ mainAuth__register.addEventListener('submit', async function(event){
     const newPassword = document.getElementById ('password').value;
 
     try {
-        const response = await fetch ('http://localhost:3000/user/register', {
+        const response = await fetch ('https://proyecto-daniel-backend.vercel.app/user/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

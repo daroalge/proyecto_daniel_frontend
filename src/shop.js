@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return mainShopItemDiv;
     }
     function listProducts() {
-      fetch("http://localhost:3000/product/list")
+      fetch("https://proyecto-daniel-backend.vercel.app/product/list")
         .then((response) => response.json())
         .then((productos) => {
           productos.forEach((producto) => {

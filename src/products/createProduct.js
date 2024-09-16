@@ -12,7 +12,7 @@ window.onload = (event) => {
         const imageProduct = document.getElementById('image').value;
 
         try {
-            const response = await fetch ('http://localhost:3000/products/list/createProducts', {
+            const response = await fetch ('https://proyecto-daniel-backend.vercel.app/products/list/createProducts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
