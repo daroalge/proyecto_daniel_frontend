@@ -62,6 +62,7 @@ window.onload = (event) => {
     const mainAuth__register=document.getElementById('mainAuth__register');
 const registerMessage=document.getElementById('registerMessage');
 
+
 mainAuth__register.addEventListener('submit', async function(event){
     event.preventDefault();
 
@@ -71,7 +72,6 @@ mainAuth__register.addEventListener('submit', async function(event){
     const newEmail = document.getElementById ('email').value;
     const newPhone = document.getElementById ('phone').value;
     const newPassword = document.getElementById ('password').value;
-    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 
     try {
         const response = await fetch (`${apiUrl}/user/register`, {
@@ -97,7 +97,7 @@ mainAuth__register.addEventListener('submit', async function(event){
         } else {
             Swal.fire({
                 position: "center",
-                icon: "success",
+                icon: "error",
                 title: "Error en el Registro",
                 text: "No pudimos completar tu registro. Por favor, revisa los datos e inténtalo nuevamente.",
               });
