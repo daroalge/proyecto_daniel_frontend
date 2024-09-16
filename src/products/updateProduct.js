@@ -25,7 +25,7 @@ window.onload = (event) => {
 
 async function loadProducts() {
     try {
-        const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
+        const apiUrl = 'https://proyecto-daniel-frontend.vercel.app/';
         const response = await fetch(`${apiUrl}/product/list`, {
             method: 'GET',
             headers: {

@@ -10,7 +10,7 @@ window.onload = (event) => {
         const sizeProduct = document.getElementById('size').value;
         const availabilityProduct = document.getElementById('availability').value;
         const imageProduct = document.getElementById('image').value;
-        const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
+        const apiUrl = 'https://proyecto-daniel-frontend.vercel.app/';
 
         try {
             const response = await fetch (`${apiUrl}/products/list/createProducts`, {

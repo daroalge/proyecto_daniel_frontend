@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     }
-    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
+    const apiUrl = 'https://proyecto-daniel-frontend.vercel.app/';
     function listProducts() {
       fetch(`${apiUrl}/product/list`)
         .then((response) => response.json())
