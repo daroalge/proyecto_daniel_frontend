@@ -1,0 +1,161 @@
+/*-----styles for main-----*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----styles for main history-----*/
+
+.main__history {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.main__history--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main__history--title {
+    align-items: center;
+    color: #4ca6de;
+}
+
+.main__history--description {
+    padding: 0px 100px;
+    text-align: justify;
+    color: #70B8E5;
+    font-weight: 600;
+}
+
+.main__history--image {
+    width: 40vw;
+    border-radius: 15px;
+    padding-right: 25px;
+}
+
+/*-----styles for main innovation-----*/
+
+.main__innovation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.main__innovation--section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main__innovation--title {
+    align-items: center;
+    color: #4ca6de;
+}
+
+.main__innovation--description {
+    padding: 0px 100px;
+    text-align: justify;
+    color: #70B8E5;
+    font-weight: 600;
+}
+
+.main__innovation--image {
+    width: 40vw;
+    border-radius: 15px;
+    padding-left: 25px;
+}
+
+/*-----styles for main values-----*/
+
+.main__values {
+    display: flex;
+    padding-top: 25px;
+    background-color: #f5efdc;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+
+}
+
+.main__values--mission {
+    text-align: center;
+    width:600px
+}
+
+.main__values--mission-title{
+    color: #9d755c;
+    font-size: 1.4rem;
+}
+
+.main__values--mission-list {
+    text-align: justify;
+    color: #BA9E8D;
+    font-weight: 600;
+}
+
+.main__values--vision {
+    text-align: center;
+    width:600px;
+}
+
+.main__values--vision-title {
+    color: #9d755c;
+    font-size: 1.4rem;
+}
+
+.main__values--vision-list {
+    text-align: justify;
+    color: #BA9E8D;
+    font-weight: 600;
+}
+
+/*-----MOBILE-----*/
+
+@media screen and (max-width: 768px) {
+
+/*styles for main history*/
+.main__history--description {
+    max-width: 90vw;
+    padding: 15px 15px;
+}
+
+.main__history--image {
+    display: none;
+}
+
+/*styles for main innovation*/
+.main__innovation--description {
+    max-width: 90vw;
+    padding: 15px 15px;
+}
+
+.main__innovation--image {
+    display: none;
+}
+
+/* for main values*/
+.main__values {
+    flex-direction: column;
+    max-width: 100vw;
+    align-items: center;
+}
+
+.main__values--mission {
+    max-width: 85vw;
+    padding: 15px 15px;
+}
+
+.main__values--vision {
+    max-width: 85vw;
+    padding: 15px 15px;
+
+}
+}

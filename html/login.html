@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/indexStyle.css">
+    <link rel="stylesheet" href="../stylesheet/loginStyle.css">
+    <link rel="shortcut icon" href="../img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="../javascript/menu.js"></script>
+    <script src="../src/login.js"></script>
+    <title>VANILLA & Co.</title>
+</head>
+<body>
+
+    <!--HEADER SECTION-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="./index.html">
+                <img class="header__logo--img1" src="../img/logo (3).png" alt="logo VANILLA & Co.">
+                <img class="header__logo--img2" src="../img/logo (5).png" alt="logo VANILLA & Co.">
+            </a>
+        </div>
+
+        <div class="header__menu">
+            <button class="open__menu" id="open">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="close__menu" id="close">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav__list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="./index.html">INICIO</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="./aboutus.html">SOBRE NOSOTROS</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="./login.html">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="mainAuth">
+        <form class="mainAuth__register" id="mainAuth__register">
+            <fieldset class="mainAuth__register--fieldset">
+
+                <div class="mainAuth__register--title">
+                    <h2>Registro</h2>
+                </div>
+
+                <div class="mainAuth__register--field">
+                    <label class="mainAuth__register--label" for="firstName">Nombre *</label>
+                    <input class="mainAuth__register--input" type="text" name="firstNameInput" id="firstName" minlength="2" maxlength="15" required>
+                </div>
+
+                <div class="mainAuth__register--field">
+                    <label class="mainAuth__register--label" for="lastName">Apellido *</label>
+                    <input class="mainAuth__register--input" type="text" name="lastNameInput" id="lastName" minlength="2" maxlength="15" required>
+                </div>
+
+                <div class="mainAuth__register--field">
+                    <label class="mainAuth__register--label" for="userName">Nombre de usuario *</label>
+                    <input class="mainAuth__register--input" type="text" name="userNameInput" id="userName" minlength="2" maxlength="20" placeholder="Máximo 20 caracteres">
+                </div>
+
+                <div class="mainAuth__register--field">
+                    <label class="mainAuth__register--label" for=email">Email *</label>
+                    <input class="mainAuth__register--input" type="email" name="emailInput" id="email" required>
+                </div>
+
+                <div class="mainAuth__register--field">
+                    <label class="mainAuth__register--label" for="phone">Teléfono</label>
+                    <input class="mainAuth__register--input" type="number" name="phoneInput" id="phone" minlength="8" maxlength="10" placeholder="(+IndicadorPais) Telefono">
+                </div>
+
+                <div class="mainAuth__register--field">
+                    <label class="mainAuth__register--label" for="password">Crea una contraseña *</label>
+                    <input class="mainAuth__register--input" type="password" name="passwordInput" id="password" minlength="8" maxlength="999999999999999" required>
+                </div>
+
+                <input type="submit" class="mainAuth__register--button" value="Registrarse">
+
+            </fieldset>
+        </form>
+
+
+        <form class="mainAuth__login" id="mainAuth__login">
+            <fieldset class="mainAuth__login--fieldset">
+
+                <div class="mainAuth__login--title">
+                    <h2>Inicia Sesión</h2>
+                </div>
+
+                <div class="mainAuth__login--field">
+                    <label class="mainAuth__login--label" for="userName">Nombre de usuario *</label>
+                    <input class="mainAuth__login--input"  type="text" name="userNameInput" id="userName__login" minlength="2" maxlength="20" required>
+                </div>
+
+                <div class="mainAuth__login--field">
+                    <label class="mainAuth__login--label" for="password">Ingresa tu contraseña *</label>
+                    <input class="mainAuth__login--input" type="password" name="passwordInput" id="password__login" minlength="8" maxlength="999999999999999" required>
+                </div>
+
+                <input type="submit" class="mainAuth__login--button" value="Inicia Sesión">
+
+            </fieldset>
+        </form>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+        </div>
+
+        <div class="footer__info">
+            <p><a href="https://github.com/daroalge" target="_blank">2024 Daniel Alfonso. Todos los derechos reservados.</a></p>
+            <p><a href="#">Politica de Privacidad</a></p>
+            <p><a href="#">Términos de Uso</a></p>
+        </div>
+
+        <div class="footer__contact">
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <p>contacto@correo.com</p>
+            <a class="footer__contact--phone" href="tel:+573001234567">+57-3001234567</a>
+        </div>
+
+        <div class="footer__header">
+            <a href="./index.html">
+                <img src="../img/logo (4).png" alt="VANILLA & Co">
+            </a>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/indexStyle.css">
+    <link rel="stylesheet" href="../stylesheet/createproductStyle.css">
+    <link rel="shortcut icon" href="../img/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="../javascript/menu.js"></script>
+    <script src="../src/products/createProduct.js"></script>
+    <title>VANILLA & Co.</title>
+</head>
+<body>
+
+    <!--HEADER SECTION-->
+    <header class="header">
+        <div class="header__logo">
+            <a href="./index.html">
+                <img class="header__logo--img1" src="../img/logo (3).png" alt="logo VANILLA & Co.">
+                <img class="header__logo--img2" src="../img/logo (5).png" alt="logo VANILLA & Co.">
+            </a>
+        </div>
+
+        <div class="header__menu">
+            <button class="open__menu" id="open">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav class="menu nav" id="nav">
+                <button class="close__menu" id="close">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="menu__list nav__list">
+                    <li class="menu__list--item"><a class="menu__list--link" href="./index.html">INICIO</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="./aboutus.html">SOBRE NOSOTROS</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="./shop.html">TIENDA</a></li>
+                    <li class="menu__list--item"><a class="menu__list--link" href="./login.html">CERRAR SESIÓN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="createProduct">
+        <div class="createProducts">
+            <form class="createProductsForm" id="createProductsForm">
+                <fieldset class="createProducts--fieldset">
+                    <h2>Crear Productos</h2>
+    
+                    <div class="createProducts--field">
+                        <label class="createProducts--label" for="nombreHelado">Nombre del Helado *</label>
+                        <input class="createProducts--input" type="text" name="nombreHeladoInput" id="nombreHelado" minlength="2" maxlength="50" required>
+                    </div>
+    
+                    <div class="createProducts--field">
+                        <label class="createProducts--label" for="description">Descripción *</label>
+                        <input class="createProducts--input" type="text" name="descriptionInput" id="description" minlength="2" maxlength="120" required>
+                    </div>
+
+                    <div class="createProducts--field">
+                        <label class="createProducts--label" for="price">Precio *</label>
+                        <input class="createProducts--input" type="number" name="priceInput" id="price" minlength="4" maxlength="8" required>
+                    </div>
+
+                    <div class="createProducts--field">
+                        <label class="createProducts--label" for="size">Tamaño *</label>
+                        <select class="createProducts--input" name="sizeInput" id="size" required>
+                            <option value="" disabled selected>Selecciona un tamaño</option>
+                            <option value="pequeno">Pequeño</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="createProducts--field">
+                        <label class="createProducts--label" for="availability">Disponibilidad *</label>
+                        <input class="createProducts--input" type="checkbox" name="availabilityInput" id="availability"required>
+                    </div>
+
+                    <div class="createProducts--field">
+                        <label class="createProducts--label" for="image">Url de la imagen *</label>
+                        <input class="createProducts--input" type="url" name="imageInput" id="image" minlength="4" maxlength="100" placeholder="https://example.com" required>
+                    </div>
+    
+                    <input type="submit" class="createProducts--button" value="Crear Producto">
+    
+                </fieldset>
+            </form>
+        </div>
+        <button type="submit" id="createProducts--buttonBack" onclick="window.location.href='dashboard.html'"><i class="bi bi-arrow-left-circle-fill"></i>Regresa</button>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+
+        <div class="footer__social">
+            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+        </div>
+
+        <div class="footer__info">
+            <p><a href="https://github.com/daroalge" target="_blank">2024 Daniel Alfonso. Todos los derechos reservados.</a></p>
+            <p><a href="#">Politica de Privacidad</a></p>
+            <p><a href="#">Términos de Uso</a></p>
+        </div>
+
+        <div class="footer__contact">
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <p>contacto@correo.com</p>
+            <a class="footer__contact--phone" href="tel:+573001234567">+57-3001234567</a>
+        </div>
+
+        <div class="footer__header">
+            <a href="./index.html">
+                <img src="../img/logo (4).png" alt="VANILLA & Co">
+            </a>
+        </div>
+
+    </footer>
+</body>
+</html>
