@@ -56,9 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
       mainShopItemDiv.appendChild(mainShopItemProductDiv);
 
       return mainShopItemDiv;
+
+
     }
+    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
     function listProducts() {
-      fetch("https://proyecto-daniel-backend.vercel.app/product/list")
+      fetch(`${apiUrl}/product/list`)
         .then((response) => response.json())
         .then((productos) => {
           productos.forEach((producto) => {

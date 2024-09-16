@@ -3,6 +3,7 @@ window.onload = (event) => {
 //LOGIN
     const mainAuth__login = document.getElementById('mainAuth__login');
     const loginMessage = document.getElementById('loginMessage');
+    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 
     mainAuth__login.addEventListener('submit', async function(event) {
 
@@ -12,7 +13,7 @@ window.onload = (event) => {
         const password = document.getElementById('password__login').value;
 
         try {
-            const response = await fetch ('https://proyecto-daniel-backend.vercel.app/api/login', {
+            const response = await fetch (`${apiUrl}/api/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -70,9 +71,10 @@ mainAuth__register.addEventListener('submit', async function(event){
     const newEmail = document.getElementById ('email').value;
     const newPhone = document.getElementById ('phone').value;
     const newPassword = document.getElementById ('password').value;
+    const apiUrl = 'https://proyecto-daniel-backend.vercel.app';
 
     try {
-        const response = await fetch ('https://proyecto-daniel-backend.vercel.app/user/register', {
+        const response = await fetch (`${apiUrl}/user/register`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
